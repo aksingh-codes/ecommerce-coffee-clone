@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Fira Sans' , sans-serif;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+a{
+    color: #212529;
+    font-weight:300;
+}
+
+p{
+    font-weight:300;
+}
+
+
+nav{
+    font-size: 1.25rem;
+    letter-spacing: -1px;
+    word-spacing: 0px;
+}
+
+nav input{
+    margin-right: 10px;
+}
+
+.slide-btns{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.slide-btns i{
+    color: #F5F5F5;
+    opacity: 1;
+}
+.carousel-indicators button{
+    background: transparent;
+    border: none;
+    margin: 0 5px;
+    color: #F5F5F5;
+    cursor: pointer;
+}
+
+.carousel-indicators .active{
+    background: none;
+    transform: scale(1.5);
+}
+
+h4{
+    font-weight: normal;
+    font-size: 1.25rem;
+}
+
+.container .card p:nth-child(3){
+    font-weight:500;
+    font-size: 1.1rem;
+}
+
+#our-mission p:nth-child(1){
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+#our-mission{
+    line-height: 1.5;
+    word-spacing: 2px;
+}
+
+#cta{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding: 50px 100px;
+    gap: 30px;
+}
+#cta img{
+    width: 100%;
+}
+#cta div{
+    position: relative;
+    width: 100%;
+}
+#cta div h3{
+    font-size: 3rem;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F5F5F5;
+}
+
+#products{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   padding: 0 100px;
+   gap: 100px;
+}
+#products .card{
+    background: none;
+    text-align: center;
+    border: none;
+}
+#products .card img{
+    margin-bottom: 25px;
+}
+#products .card p{
+    background: #F5F5F5;
+    margin-bottom: 0;
+    padding-bottom: 16px;
+}
+
+#products .card:hover{
+    border: 1px solid rgba(0,0,0,.125);
+    cursor: pointer;
+}
+
+#products .container{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+
+#our-mission h4{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#our-mission{
+    padding: 50px 100px;
+}
+#our-mission hr{
+    margin-bottom: 50px;
+}
+#our-mission img{
+    width: 50%;
+}
+
+#our-mission .wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+#slogans{
+    padding: 0 100px;
+}
+
+#slogans h4{
+    text-align: center;
+    padding-top: 50px;
+}
+#slogans .wrapper{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#slogans .wrapper div{
+    width: 100%;
+}
+#slogans div img{
+    width: 60%;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+
+#footer ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+#footer input{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#footer #social-media{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#footer #social-media i:hover{
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+
+#footer a:hover{
+    text-decoration: none;
+    color: #212529;
+}
+
+#footer li:hover{
+    transform: scale(1.2);
+}
+
+
+#copyright{
+    text-align: center;
+    padding: 0 100px;
+}
+
+#copyright hr{
+    padding-bottom: 30px;
+}
+
+h3{
+    color: #989EAD;
+}
+
+
+@media screen and (max-width:1000px){
+    
+
+    
+    #cta{
+        flex-direction: column;
+    }
+    #cta div h3{
+        position: relative;
+        color: #212529;
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: normal;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    #products .container{
+        grid-template-columns: 1fr 1fr;
+    }
+    #our-mission .wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    #our-mission img{
+        width: 100%;
+    }
+
+    #slogans .wrapper{
+        flex-direction: column;
+    }
+
+    #footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer ul{
+        margin-bottom: 50px;
+    }
+    #social-media{
+        justify-content: center;
+    }
+
+    
+}
+
+@media  screen and (max-width:650px) {
+    #cta{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #products{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #our-mission{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #slogans{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #footer{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #copyright{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
